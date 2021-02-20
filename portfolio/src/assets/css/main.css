@@ -2,6 +2,10 @@
   list-style-image: url('../images/next.svg');
 }
 
+.screenshots {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
 .btn,
 .navbar .navbar-nav > a.btn {
   border-width: 2px;
@@ -1358,11 +1362,11 @@ small {
 }
 
 a {
-  color: #378C3F;
+  color: #314656;
 }
 
 a:hover, a:focus {
-  color: #378C3F;
+  color: #DA5453;
 }
 
 h1, .h1 {
@@ -3098,9 +3102,10 @@ img {
   position: relative;
   overflow: hidden;
   width: 100%;
-  margin-bottom: 20px;
-  -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  -webkit-box-shadow: 0px 0.2rem 0.5rem 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0.2rem 0.5rem 0px rgba(0, 0, 0, 0.2);
 }
 
 .card .card-body {
@@ -3329,13 +3334,13 @@ img {
 }
 
 .page-header[filter-color="orange"] {
-  background: rgba(44, 44, 44, 0.2);
+  background: #DA5453;
   /* For browsers that do not support gradients */
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(224, 23, 3, 0.6)));
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(49, 70, 86, 0.2)), to(rgba(218, 84, 83, 0.5)));
+  background: linear-gradient(0deg, rgba(49, 70, 86, 0.2), rgba(218, 84, 83, 0.5));
   /* Standard syntax */
 }
 

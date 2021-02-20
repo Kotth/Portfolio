@@ -13,3 +13,6 @@ export class AboutComponent implements OnInit {
   }
 
 }
+
+export class aboutComponent {
+}
