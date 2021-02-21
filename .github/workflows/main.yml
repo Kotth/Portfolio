@@ -21,7 +21,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: dist
-          path: ./portfolio/dist
+          path: ./portfolio/dist/portfolio
   deploy:
     name: Deploy
     needs: build
@@ -33,7 +33,7 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: dist
-          path: ./portfolio/dist
+          path: ./portfolio/dist/portfolio
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
