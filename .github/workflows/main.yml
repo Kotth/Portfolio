@@ -5,7 +5,7 @@ on:
       - master
 defaults:
   run:
-    working-directory: ./Portfolio/portfolio
+    working-directory: ./portfolio
 jobs:
   build:
     name: Build
@@ -21,7 +21,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: dist
-          path: ./Portfolio/portfolio/dist
+          path: ./portfolio/dist
   deploy:
     name: Deploy
     needs: build
@@ -33,11 +33,11 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: dist
-          path: ./Portfolio/portfolio/dist
+          path: ./portfolio/dist
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
         env:
-          PROJECT_PATH: ./Portfolio/portfolio
+          PROJECT_PATH: ./portfolio
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
