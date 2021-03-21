@@ -12,28 +12,32 @@ import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import {RouterModule} from "@angular/router";
+import {TabComponent} from "../tab/tab.component";
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    SnotifyModule,
-    FormsModule,
-    ReactiveFormsModule,
-    NgxSpinnerModule
-  ],
-  declarations: [
-    ProfileComponent,
-    HeaderComponent,
-    FooterComponent,
-    AboutComponent,
-    IntroComponent,
-    ContactComponent,
-    EducationComponent,
-    ExperienceComponent,
-    SkillsComponent,
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        SnotifyModule,
+        FormsModule,
+        ReactiveFormsModule,
+        NgxSpinnerModule,
+        RouterModule
+    ],
+    declarations: [
+        ProfileComponent,
+        HeaderComponent,
+        FooterComponent,
+        AboutComponent,
+        IntroComponent,
+        ContactComponent,
+        EducationComponent,
+        ExperienceComponent,
+        SkillsComponent,
+        TabComponent,
+    ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
     SnotifyService,
