@@ -7,11 +7,16 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProfileModule } from './profile/profile.module';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import {TabComponent} from "./tab/tab.component";
 
 const routes: Routes = [
   {
     path: '',
     component: ProfileComponent
+  },
+  {
+    path: 'tab',
+    component: TabComponent
   }
 ];
 

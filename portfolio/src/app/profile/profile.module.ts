@@ -12,17 +12,19 @@ import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import {RouterModule} from "@angular/router";
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    SnotifyModule,
-    FormsModule,
-    ReactiveFormsModule,
-    NgxSpinnerModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        SnotifyModule,
+        FormsModule,
+        ReactiveFormsModule,
+        NgxSpinnerModule,
+        RouterModule
+    ],
   declarations: [
     ProfileComponent,
     HeaderComponent,
