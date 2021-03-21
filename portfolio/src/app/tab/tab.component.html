@@ -1,6 +1,81 @@
-<div class="section" id="tab">
-    <div class="container">
-test
+<div id="tab" class="container">
+  <div class="content-center">
+    <!-- Button trigger modal -->
+    <button class="btn btn-primary" data-aos-anchor="data-aos-anchor" data-toggle="modal" data-target="#modal">
+      <div class="row d-flex justify-content-center" style="margin-bottom: 0.2rem;">
+        <i class="fas fa-table fa-3x"></i>
+      </div>
+      <div class="row  d-flex justify-content-center text-uppercase" style="margin-top: 0.2rem;">
+        tableau <br>récapitulatif
+      </div>
+    </button>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="Tableau" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <table class="table table-bordered table-hover text-left">
+            <thead>
+            <tr class="table-active">
+              <th scope="col">Titre</th>
+              <th scope="col">Durée</th>
+              <th scope="col">Heures valorisées</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">Wire.Hack! 1st ROUND 2019-2020</th>
+              <td class="text-right">24H</td>
+              <td class="text-right">10H</td>
+            </tr>
+            <tr>
+              <th scope="row">Cyber Security Challenge 2020</th>
+              <td class="text-right">24H</td>
+              <td class="text-right">10H</td>
+            </tr>
+            <tr>
+              <th scope="row">Apprenez à programmer en Python</th>
+              <td class="text-right">40H</td>
+              <td class="text-right">10H</td>
+            </tr>
+            <tr>
+              <th scope="row">Développez des applications Web avec Angular</th>
+              <td class="text-right">20H</td>
+              <td class="text-right">10H</td>
+            </tr>
+            <tr>
+              <th scope="row">Passez au Full-Stack avec NodeJS, Express et MongoDB</th>
+              <td class="text-right">10H</td>
+              <td class="text-right">0H</td>
+            </tr>
+            <tr>
+              <th scope="row">Initiez-vous à Kotlin</th>
+              <td class="text-right">12H</td>
+              <td class="text-right">0H</td>
+            </tr>
+            <tr>
+              <th scope="row">Vue - The Complete Guide</th>
+              <td class="text-right">49H</td>
+              <td class="text-right">10H</td>
+            </tr>
+            <tr>
+              <th scope="row">Brevet d'animateur en centre de vacances et d'animateur scout</th>
+              <td class="text-right">300H</td>
+              <td class="text-right">10H</td>
+            </tr>
+            <tr class="bg-secondary" style="color:white;">
+              <th scope="row">Total</th>
+              <td class="text-right">479H</td>
+              <td class="text-right">60H</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary ml-auto" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
-

@@ -13,6 +13,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from "@angular/router";
+import {TabComponent} from "../tab/tab.component";
 
 
 @NgModule({
@@ -25,17 +26,18 @@ import {RouterModule} from "@angular/router";
         NgxSpinnerModule,
         RouterModule
     ],
-  declarations: [
-    ProfileComponent,
-    HeaderComponent,
-    FooterComponent,
-    AboutComponent,
-    IntroComponent,
-    ContactComponent,
-    EducationComponent,
-    ExperienceComponent,
-    SkillsComponent,
-  ],
+    declarations: [
+        ProfileComponent,
+        HeaderComponent,
+        FooterComponent,
+        AboutComponent,
+        IntroComponent,
+        ContactComponent,
+        EducationComponent,
+        ExperienceComponent,
+        SkillsComponent,
+        TabComponent,
+    ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
     SnotifyService,
